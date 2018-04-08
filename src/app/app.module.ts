@@ -7,7 +7,7 @@ import { HttpModule } from '@angular/http';
 import { RestangularModule, Restangular } from 'ngx-restangular';
 // import { RestangularConfigFactory } from './shared/restConfig';
 import {MatToolbarModule, MatToolbar} from '@angular/material/toolbar';
-
+import {AppService}  from './app.service';
 
 
 
@@ -58,7 +58,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     MatToolbarModule
     //RestangularModule.forRoot(RestangularConfigFactory)
   ],
-  providers: [],
+  providers: [ AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
